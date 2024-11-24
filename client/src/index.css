@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sidebar {
+  scrollbar-width: thin; /* For Firefox */
+  /* scrollbar-color: #8d6e63 #3e2723; Thumb color, Track color */
+  scrollbar-color: #ab4f3e #c37e65; /* Thumb color, Track color */
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 1px; /* Very slim scrollbar width */
+  height: 4px; /* Slim height for horizontal scrollbars */
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #3e2723; /* Track color */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #8d6e63; /* Thumb color */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #a1887f; /* Thumb color on hover */
+}
